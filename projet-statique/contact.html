@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Prenez contact avec notre équipe pour réserver votre visite guidée personnalisée de Bruxelles.">
+    <title>Contact – Brussels Lux Tours</title>
+    <link rel="stylesheet" href="./CSS/style.css">
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+    <link rel="manifest" href="./site.webmanifest">
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css"
+    >
+  </head>
+  <body>
+    <header class="header2">
+      <div class="container-navbar">
+        <a href="./index.html"
+          ><img
+            src="./Images/Logo.webp"
+            alt="Logo de Brussels Lux Tours"
+            class="image-logo"
+            width="102"
+            height="75"
+        ></a>
+        <input type="checkbox" class="checkbox" id="menu-bar" hidden>
+        <div class="supra-navbar">
+          <label for="menu-bar">
+            <i class="fa fa-bars menu-icon" aria-hidden="true"></i>
+          </label>
+          <nav class="navbar">
+            <ul>
+              <li><a href="./index.html">Accueil</a></li>
+              <li>
+                <a href="./a-propos.html">Services</a>
+                <ul>
+                  <li><a href="./parcours-franc-maconnerie.html">Parcours Franc-Maçonnerie</a></li>
+                  <li><a href="./parcours-moyen-age.html">Parcours Moyen-Age</a></li>
+                </ul>
+              </li>
+              <li><a href="./galerie.html">Galerie</a></li>
+              <li><a href="./a-propos.html">A propos</a></li>
+              <li><a href="./contact.html">Contact</a></li>
+            </ul>
+          </nav>
+        </div>
+      </div>
+      <div class="common-header">
+        <h1 class="common-heading">Réservations et contact</h1>
+        <div class="big-underline"></div>
+      </div>
+    </header>
+    <main>
+      <section class="form-container">
+          <h2 class="form-title center">
+            Formulaire pour les réservations et les demandes d'informations
+          </h2>
+        <p class="form-description center">
+          Afin de pouvoir répondre à vos questions, évaluer vos besoins et/ou
+          rédiger un devis, veuillez compléter ce formulaire :
+        </p>
+          <form id="survey-form">
+            <div class="form-group">
+              <label id="lname-label" for="lname">Nom</label>
+              <input
+                type="text"
+                name="lname"
+                id="lname"
+                class="form-control"
+                placeholder="Entrez votre nom de famille"
+                required
+              >
+            </div>
+            <div class="form-group">
+              <label id="fname-label" for="fname">Prénom</label>
+              <input
+                type="text"
+                name="fname"
+                id="fname"
+                class="form-control"
+                placeholder="Entrez votre prénom"
+                required
+              >
+            </div>
+            <div class="form-group">
+              <label id="email-label" for="email">Email</label>
+              <input
+                type="email"
+                name="email"
+                id="email"
+                class="form-control"
+                placeholder="Entrez votre email"
+                required
+              >
+            </div>
+            <div class="form-group">
+              <label id="phone-label" for="phone">Numéro de téléphone</label>
+              <input
+                type="tel"
+                name="phone"
+                id="phone"
+                class="form-control"
+                placeholder="Entrez votre numéro de téléphone"
+                required
+              >
+            </div>
+            <div class="form-group">
+              <label
+                id="number-of-participants-label"
+                for="number-of-participants"
+                >Nombre de participants</label
+              >
+              <input
+                type="number"
+                name="number-of-participants"
+                id="number-of-participants"
+                min="1"
+                max="20"
+                class="form-control"
+                placeholder="Indiquez le nombre de participants"
+                required
+              >
+            </div>
+            <div class="form-group">
+              <p>Quel parcours vous intéresse ?</p>
+              <select id="dropdown" name="role" class="form-control" required>
+                <option disabled selected value>Choisissez une option</option>
+                <option value="F-M">Parcours Franc-maçonnerie</option>
+                <option value="M-A">Parcours Moyen-Age</option>
+                <option value="F-M-et-M-A">Les deux parcours</option>
+              </select>
+            </div>
+
+            <div class="form-group">
+              <p>
+                Vous avez des questions ou une demande précise ? Faites-le nous
+                savoir !
+              </p>
+              <textarea
+                id="comments"
+                class="input-textarea"
+                name="comment"
+                placeholder="Laissez-nous votre message ici..."
+              ></textarea>
+            </div>
+
+            <div class="form-group">
+              <button type="submit" id="submit" class="form-submit-button">
+                Soumettre
+              </button>
+            </div>
+          </form>
+      </section>
+    </main>
+    <footer class="footer">
+      <div class="footer-container">
+        <div class="footer-row">
+          <div class="footer-col">
+            <p>coordonnées</p>
+            <address>
+              <i class="fa fa-home" aria-hidden="true"></i><br>
+              Avenue Louise 523<br>
+              1050 Bruxelles<br>
+              Belgium
+            </address>
+            <br>
+            <br>
+            <a href="tel:+3223351201"
+              ><i class="fa fa-phone-square" aria-hidden="true"></i
+              >&nbsp;0032-2-3351201</a
+            >
+          </div>
+          <div class="footer-col">
+            <p>plan du site</p>
+            <ul>
+              <li><a href="./index.html">accueil</a></li>
+              <li><a href="./parcours-franc-maconnerie.html">parcours franc-maçonnerie</a></li>
+              <li><a href="./parcours-moyen-age.html">parcours moyen-age</a></li>
+              <li><a href="./galerie.html">galerie</a></li>
+              <li><a href="./a-propos.html">à propos</a></li>
+              <li><a href="./contact.html">contact</a></li>
+            </ul>
+          </div>
+          <div class="footer-col">
+            <p>GDPR</p>
+            <ul>
+              <li><a href="#">conditions générales</a></li>
+              <li><a href="#">mentions légales</a></li>
+              <li><a href="#">charte de données</a></li>
+            </ul>
+          </div>
+          <div class="footer-col">
+            <p>Suivez-nous</p>
+            <div class="social-links">
+              <a href="https://www.facebook.com/"
+                ><i class="fab fa-facebook-f"></i
+              ></a>
+              <a href="https://twitter.com/?lang=en"
+                ><i class="fab fa-twitter"></i
+              ></a>
+              <a href="https://www.instagram.com/"
+                ><i class="fab fa-instagram"></i
+              ></a>
+              <a href="https://be.linkedin.com/"
+                ><i class="fab fa-linkedin-in"></i
+              ></a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <p class="copyright">2023 &#169; Quentin Dispas</p>
+    </footer>
+  </body>
+</html>
